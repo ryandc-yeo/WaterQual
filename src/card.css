@@ -1,0 +1,58 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 0;
+  background-color: #106679;
+  border-radius: 12px;
+  border-style: none;
+  height: 106px;
+  padding: 6px 10px;
+  justify-content: space-between;
+  color: #106679;
+  z-index: 1;
+}
+
+.card2 {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: #dcf9ff;
+  border-radius: 12px;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
+  z-index: -1;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.required {
+  color: red;
+  font-size: 30px;
+}
+
+.info {
+  font-size: 37px;
+  cursor: pointer;
+}
+
+.input-field {
+  margin-bottom: 5px;
+  margin-right: 3px;
+  border-radius: 8px;
+  border-color: #b7b7b7;
+  border-style: solid;
+  line-height: 2;
+  padding-left: 10px;
+  color: grey;
+  font-weight: 800;
+}
+
+h2 {
+  margin: 0;
+}
