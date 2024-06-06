@@ -2,20 +2,22 @@ import './App.css'
 import Card from './card.jsx'
 import { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
+  const navigate = useNavigate();
   const [inputs, setInputs] = useState({
-    pH: '', Hardness: '', Solids: '', Chloramines: '', Sulfate: '',
-    Conductivity: '', OrganicCarbon: '', Trihalomethanes: '', Turbidity: ''
+    ph: '', Hardness: '', Solids: '', Chloramines: '', Sulfate: '',
+    Conductivity: '', Organic_carbon: '', Trihalomethanes: '', Turbidity: ''
   });
   const placeholders = {
-    pH: 'pH',
+    ph: 'pH',
     Hardness: 'mg/L',
     Solids: 'ppm',
     Chloramines: 'ppm',
     Sulfate: 'mg/L',
     Conductivity: 'μS/cm',
-    OrganicCarbon: 'ppm',
+    Organic_carbon: 'ppm',
     Trihalomethanes: 'μg/L',
     Turbidity: 'NTU'
   };
@@ -30,8 +32,14 @@ function App() {
   };
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/predict', inputs);
-      alert('Water Potability: ' + (response.data.potability ? 'Potable' : 'Not Potable'));
+      const response = await axios.post('http://127.0.0.1:5000/predict', inputs);
+      console.log(`potability:`, response.data.potability); 
+      if (response.data.potability) {
+        navigate('/potablity', { state: { message: 'Potable' }}); // Passing state
+      } else {
+        navigate('/potablity', { state: { message: 'Not Potable' } }); // Adjust as needed
+      }
+
     } catch (error) {
       console.error('Failed to fetch predictions:', error);
       alert('Failed to fetch predictions');

@@ -1,8 +1,11 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import joblib
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
 model = joblib.load('random_forest_model.pkl')  # Load the trained model
 
 def impute_missing_values(data_df):
