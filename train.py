@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, roc_auc_score, accuracy_score, f1_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier
+import joblib
 
 # Load dataset
 water = pd.read_csv("water_potability.csv")
@@ -45,3 +46,5 @@ print(f"Test Precision: {precision:.2f}")
 print(f"Test Recall: {recall:.2f}")
 print(classification_report(y_test, y_pred))
 print(f"Test ROC AUC Score: {roc_auc:.2f}")
+
+joblib.dump(best_random_forest, 'random_forest_model.pkl')

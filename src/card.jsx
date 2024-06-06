@@ -3,12 +3,17 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { Link } from 'react-router-dom';
 import './card.css';
 
-export default function Card({title, placeholder, isRequired=false}) {
+export default function Card({title, placeholder, value, onChange}) {
+    const handleInputChange = (e) => {
+        console.log(`Input for ${title}:`, e.target.value);  
+        onChange(title, e.target.value);  // Pass the title and the new value to the onChange handler
+    };
+
     return (
         <div className='card'>
             <div className='row'>
                 <h2>{title}</h2>
-                {isRequired ? <span className='required'>*</span> : null}
+                {/* {isRequired ? <span className='required'>*</span> : null} */}
             </div>
             <div className='row'>
                 <Link 
@@ -18,7 +23,12 @@ export default function Card({title, placeholder, isRequired=false}) {
                 >
                     <IoIosInformationCircleOutline className='info' />
                 </Link>
-                <input className='input-field' placeholder={placeholder} />
+                <input 
+                    className='input-field' 
+                    placeholder={placeholder} 
+                    value={value}
+                    onChange={handleInputChange}          
+                    />
             </div>
             <div className='card2'></div>
         </div>
@@ -28,5 +38,6 @@ export default function Card({title, placeholder, isRequired=false}) {
 Card.propTypes = {
     title: PropTypes.string.isRequired,
     placeholder: PropTypes.string.isRequired,
-    isRequired: PropTypes.bool
+    value: PropTypes.string,
+    onChange: PropTypes.func.isRequired,
 }
