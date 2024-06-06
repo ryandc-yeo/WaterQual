@@ -8,10 +8,12 @@ export default function Info() {
 
     return (
         <div className='info-page'>
-            <h1>{title}</h1>
-            <p className='info-text'>{info_json[title].text1}</p>
-            <p className='info-text'>{info_json[title].text2}</p>
-            <a href="/"><button>Back</button></a>
+            <div className='info-container'>
+                <h1>{title}</h1>
+                <p className='info-text'>{info_json[title].text1}</p>
+                <p className='info-text'>{info_json[title].text2}</p>
+                <a href="/"><button>Back</button></a>
+            </div>
         </div>
     );
 }
