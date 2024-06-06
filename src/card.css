@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -51,11 +51,11 @@
   margin-bottom: 5px;
   margin-right: 3px;
   border-radius: 8px;
-  border-color: #B7B7B7;
+  border-color: #b7b7b7;
   border-style: solid;
   line-height: 2;
   padding-left: 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-weight: 800;
 }
 .input-field:hover {
@@ -67,5 +67,5 @@
 
 h2 {
   margin: 0;
-  font-family: 'Poppins', sans-serif; /* Adjust the font family as needed */
+  font-family: "Poppins", sans-serif; /* Adjust the font family as needed */
 }

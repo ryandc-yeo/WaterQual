@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
@@ -10,13 +10,14 @@
   font-style: normal;
 }
 
-
 #root {
-  /* max-width: 1280px; */
-  margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
-  background: linear-gradient(to bottom, #b3d1ff 0%, #99c2ff 100%); /* Light blue gradient */
+  /* background: linear-gradient(
+    to bottom,
+    #b3d1ff 0%,
+    #99c2ff 100%
+  ); Light blue gradient */
 }
 
 .logo {
@@ -59,9 +60,13 @@
   align-items: center;
   justify-content: center;
   /* max-width: 960px; Adjust based on your preference */
-  margin: auto; /* Center align the container */
+  margin: 0px; /* Center align the container */
   padding: 20px; /* Padding around the content */
-  background: linear-gradient(to bottom, #B8E1FF 0%, #57B9FF 100%); /* Light blue gradient */
+  background: linear-gradient(
+    to bottom,
+    #b8e1ff 0%,
+    #57b9ff 100%
+  ); /* Light blue gradient */
 }
 
 .options {
@@ -76,9 +81,9 @@
 h1 {
   text-align: center;
   color: black; /* Sample color, adjust as needed */
-  font-family: 'Poppins', sans-serif; /* Adjust the font family as needed */
+  font-family: "Poppins", sans-serif; /* Adjust the font family as needed */
   margin-bottom: 50px; /* Space below the heading */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 button {
@@ -87,7 +92,7 @@ button {
   padding: 10px 20px;
   font-size: 30px;
   background-color: #106679; /* Button color */
-  font-family: 'Poppins', sans-serif; /* Adjust the font family as needed */
+  font-family: "Poppins", sans-serif; /* Adjust the font family as needed */
   color: white;
   border: none;
   border-radius: 15px;
@@ -96,5 +101,7 @@ button {
 }
 
 button:hover {
-  background-color: #106679; /* Slightly lighter on hover */
+  background-color: #ffffff;
+  color: #106679;
+  transition-duration: 250ms;
 }
