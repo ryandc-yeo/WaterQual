@@ -35,9 +35,9 @@ function App() {
       const response = await axios.post('http://127.0.0.1:5000/predict', inputs);
       console.log(`potability:`, response.data.potability); 
       if (response.data.potability) {
-        navigate('/potablity', { state: { message: 'Potable' }}); // Passing state
+        navigate('/potablity', { state: { title: 'Potable', message: response.data.message}}); // Passing state
       } else {
-        navigate('/potablity', { state: { message: 'Not Potable' } }); // Adjust as needed
+        navigate('/potablity', { state: { title: 'Not Potable', message: response.data.message } }); // Adjust as needed
       }
 
     } catch (error) {
