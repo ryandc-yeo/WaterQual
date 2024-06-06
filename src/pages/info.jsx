@@ -1,18 +1,17 @@
-// import PropTypes from 'prop-types'; 
-import './info.css'; 
+import { useLocation } from 'react-router-dom';
+import './info.css';
+import info_json from './info.json'; 
 
 export default function Info() {
+    const location = useLocation();
+    const { title } = location.state || { title: 'pH' };
+
     return (
         <div className='info-page'>
-            <h1>pH</h1>
-            <p>text 1</p>
-            <p>text 2</p>
-            <button>Back</button>
+            <h1>{title}</h1>
+            <p className='info-text'>{info_json[title].text1}</p>
+            <p className='info-text'>{info_json[title].text2}</p>
+            <a href="/"><button>Back</button></a>
         </div>
-    )
+    );
 }
-
-// Info.propTypes = {
-//     title: PropTypes.string.isRequired,
-//     isRequired: PropTypes.bool
-// }

@@ -69,3 +69,7 @@ h2 {
   margin: 0;
   font-family: "Poppins", sans-serif; /* Adjust the font family as needed */
 }
+
+.info-button {
+  text-decoration: none;
+}

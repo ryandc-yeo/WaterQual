@@ -23,7 +23,7 @@
         "text1": "It’s the Electrical conductivity of water in μS/cm. This numerical value will most probably be between 181 and 753.",
         "text2": "The * icon indicates that you must enter a value, the box can not be left blank!"
     },
-    "Organic_carbon": {
+    "Organic Carbon": {
         "text1": "It’s the amount of organic carbon in ppm. This numerical value will most probably be between 2.2 and 28.3.",
         "text2": "The * icon indicates that you must enter a value, the box can not be left blank!"
     },
