@@ -4,7 +4,7 @@ import Card from './card.jsx'
 function App() {
   return (
     <div className='container'>
-      <h1>WaterQual</h1>
+      <h1>WaterQualTester</h1>
       <div className='options'>
         <Card title='pH' />
         <Card title='Hardness' isRequired={true} />

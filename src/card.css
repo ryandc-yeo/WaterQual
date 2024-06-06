@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 .card {
   position: relative;
   display: flex;
@@ -45,14 +51,21 @@
   margin-bottom: 5px;
   margin-right: 3px;
   border-radius: 8px;
-  border-color: #b7b7b7;
+  border-color: #B7B7B7;
   border-style: solid;
   line-height: 2;
   padding-left: 10px;
-  color: grey;
+  background-color: #FFFFFF;
   font-weight: 800;
+}
+.input-field:hover {
+  border-color: grey;
+}
+.input-field.active {
+  border-color: grey; /* Change to your preferred active color */
 }
 
 h2 {
   margin: 0;
+  font-family: 'Poppins', sans-serif; /* Adjust the font family as needed */
 }
