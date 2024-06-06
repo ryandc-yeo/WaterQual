@@ -70,7 +70,7 @@
 }
 
 .options {
-  height: 60vh; /* Full viewport height */
+  height: 50vh; /* Full viewport height */
   width: 70vw; /* Full viewport width */
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates three columns */
@@ -96,9 +96,7 @@ button {
   color: white;
   border: none;
   border-radius: 15px;
-  cursor: pointer;
-  margin-top: 20px; /* Space above the button */
-}
+  cursor: pointer;}
 
 button:hover {
   background-color: #ffffff;

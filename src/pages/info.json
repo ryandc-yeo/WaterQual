@@ -37,11 +37,11 @@
     },
     "Potable": {
         "text1": "The water is safe to drink!",
-        "text2":""
+        "text2":"Congratulations! The water analysis results indicate that the water is safe for drinking."
     },
     "Not Potable": {
         "text1": "The water is unsafe to drink!",
-        "text2":":("
+        "text2": "The parameters that you have entered indicate that the water is not safe for consumption :("
     }
 
 }
