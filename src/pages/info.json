@@ -1,39 +1,39 @@
 {
     "ph": {
-        "text1": "It’s the pH of water. This numerical value will be between 0 and 14. Water has a neutral pH of 7, which indicates that it is neither acidic or basic.",
-        "text2": "This value is not required for the potability calculations!"
+        "text1": "It’s the pH of water. This numerical value will be between 0 and 14. ",
+        "text2": "Water has a neutral pH of 7, which indicates that it is neither acidic or basic."
     },
     "Hardness": {
-        "text1": "It’s the capacity of water to precipitate soap in mg/L. This numerical value will most probably be between 47.4 and 323.",
-        "text2": "The * icon indicates that you must enter a value, the box can not be left blank!"
+        "text1": "It’s the capacity of water to precipitate soap in mg/L.",
+        "text2": "This numerical value will most probably be between 47.4 and 323."
     },
     "Solids": {
-        "text1": "It’s the total dissolved solids in ppm. This numerical value will most probably be between 321 and 61.2k.",
-        "text2": "The * icon indicates that you must enter a value, the box can not be left blank!"
+        "text1": "It’s the total dissolved solids in ppm.",
+        "text2": "This numerical value will most probably be between 321 and 61.2k."
     },
     "Chloramines": {
-        "text1": "It’s the amount of chloramines in ppm. This numerical value will most probably be between 0.35 and 13.1.",
-        "text2": "The * icon indicates that you must enter a value, the box can not be left blank!"
+        "text1": "It’s the amount of chloramines in ppm.",
+        "text2": "This numerical value will most probably be between 0.35 and 13.1."
     },
     "Sulfate": {
-        "text1": "It’s the amount of Sulfates dissolved in mg/L. This numerical value will most probably be between 0.35 and 13.1.",
-        "text2": "This value is not required for the potability calculations!"
+        "text1": "It’s the amount of Sulfates dissolved in mg/L.",
+        "text2": "This numerical value will most probably be between 129 and 481."
     },
     "Conductivity": {
-        "text1": "It’s the Electrical conductivity of water in μS/cm. This numerical value will most probably be between 181 and 753.",
-        "text2": "The * icon indicates that you must enter a value, the box can not be left blank!"
+        "text1": "It’s the Electrical conductivity of water in μS/cm.",
+        "text2": "This numerical value will most probably be between 181 and 753."
     },
     "Organic_carbon": {
-        "text1": "It’s the amount of organic carbon in ppm. This numerical value will most probably be between 2.2 and 28.3.",
-        "text2": "The * icon indicates that you must enter a value, the box can not be left blank!"
+        "text1": "It’s the amount of organic carbon in ppm.",
+        "text2": "This numerical value will most probably be between 2.2 and 28.3."
     },
     "Trihalomethanes": {
-        "text1": "It’s the amount of Trihalomethanes in μg/L. This numerical value will most likely be between 0.74 and 124.",
-        "text2": "This value is not required for the potability calculations!"
+        "text1": "It’s the amount of Trihalomethanes in μg/L.",
+        "text2": "This numerical value will most likely be between 0.74 and 124."
     },
     "Turbidity": {
-        "text1": "It’s the measure of light emitting property of water in NTU. This numerical value will most probably be between 1.45 and 6.74.",
-        "text2": "The * icon indicates that you must enter a value, the box can not be left blank!"
+        "text1": "It’s the measure of light emitting property of water in NTU.",
+        "text2": "This numerical value will most probably be between 1.45 and 6.74."
     },
     "Potable": {
         "text1": "The water is safe to drink!",

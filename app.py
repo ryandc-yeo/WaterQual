@@ -67,7 +67,7 @@ def predict():
                         reasons.append(f"{param} value of {value} is outside the acceptable range ({range_val[0]} - {range_val[1]})")
 
             if reasons:
-                message = "Possible reasons: " + "; ".join(reasons)
+                message = "Possible reasons: " + ", ".join(reasons)
             else:
                 message = "Water is not potable based on the analysis."
 
